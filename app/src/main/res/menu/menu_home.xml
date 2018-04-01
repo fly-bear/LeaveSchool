@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<item-->
+        <!--android:id="@+id/action_grades_credits_statistics"-->
+        <!--android:icon="@drawable/grades_credit_entry"-->
+        <!--android:title="学分统计"-->
+        <!--android:visible="false"-->
+        <!--app:showAsAction="ifRoom"/>-->
+
+    <!--<item-->
+        <!--android:id="@+id/action_grades_refresh"-->
+        <!--android:icon="@android:drawable/stat_notify_sync"-->
+        <!--android:title="刷新"-->
+        <!--app:showAsAction="ifRoom"/>-->
+
+    <item
+        android:id="@+id/action_query"
+        android:title="查询"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_Admin"
+        android:title="管理员"
+        app:showAsAction="ifRoom"/>
+</menu>

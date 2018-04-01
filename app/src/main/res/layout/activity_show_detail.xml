@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/show_detail_bg"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".query.ShowDetailActivity">
+
+    <LinearLayout
+        android:id="@+id/courseName_ll"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/colorPrimary">
+        <!-- 课程名-->
+        <TextView
+            android:id="@+id/courseName_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="详细信息"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!--<com.leaveschool.query.DetailItem-->
+        <!--android:id="@+id/grade"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--/>-->
+
+    <!--<com.leaveschool.query.DetailItem-->
+        <!--android:id="@+id/major"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--/>-->
+    <com.leaveschool.query.DetailItem
+        android:id="@+id/classes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <com.leaveschool.query.DetailItem
+        android:id="@+id/id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <com.leaveschool.query.DetailItem
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <com.leaveschool.query.DetailItem
+        android:id="@+id/area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <com.leaveschool.query.DetailItem
+        android:id="@+id/dormitory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <com.leaveschool.query.DetailItem
+        android:id="@+id/isleft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <com.leaveschool.query.DetailItem
+        android:id="@+id/aim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <com.leaveschool.query.DetailItem
+        android:id="@+id/reason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <!--<com.leaveschool.query.DetailItem-->
+        <!--android:id="@+id/phonenumber"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--/>-->
+    <!--<com.leaveschool.query.DetailItem-->
+        <!--android:id="@+id/emergencycontact"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--/>-->
+    <!--<com.leaveschool.query.DetailItem-->
+        <!--android:id="@+id/emergencynumber"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--/>-->
+    <!--<com.leaveschool.query.DetailItem-->
+        <!--android:id="@+id/homecontact"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--/>-->
+
+    <!--<com.leaveschool.query.DetailItem-->
+        <!--android:id="@+id/homenumber"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--/>-->
+    <!--<com.leaveschool.query.DetailItem-->
+        <!--android:id="@+id/isinlib"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--/>-->
+
+    <com.leaveschool.query.DetailItem
+        android:id="@+id/leavetime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <com.leaveschool.query.DetailItem
+        android:id="@+id/returntime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <com.leaveschool.query.DetailItem
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <!-- 课程学分-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1">-->
+        <!--<TextView-->
+            <!--android:id="@+id/courseScore_tv"-->
+            <!--style="@style/showDetailText"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="2学分" />-->
+    <!--</LinearLayout>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:text="取消"/>
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:text="删除"/>
+    </RelativeLayout>
+
+</LinearLayout>

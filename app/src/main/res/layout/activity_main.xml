@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.leaveschool.main.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        app:titleTextColor="#FFFFFF"
+        app:title="离校登记表"
+        >
+        <!--app:titleTextAppearance="@style/Toolbar.TitleText"-->
+
+    </android.support.v7.widget.Toolbar>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="本周周数："-->
+            <!--/>-->
+        <!--<Spinner-->
+            <!--android:id="@+id/weekNum"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+
+        <!--</Spinner>-->
+
+    <!--</LinearLayout>-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/weekTitle"
+                style="@style/courseToolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="第0周" />
+
+            <com.leaveschool.main.ProfileEdit
+                android:id="@+id/grade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <com.leaveschool.main.ProfileEdit
+                android:id="@+id/major"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <com.leaveschool.main.ProfileEdit
+                android:id="@+id/classes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <com.leaveschool.main.ProfileEdit
+                android:id="@+id/id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <com.leaveschool.main.ProfileEdit
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <com.leaveschool.main.ProfileEdit
+                android:id="@+id/area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <com.leaveschool.main.ProfileEdit
+                android:id="@+id/dormitory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <com.leaveschool.main.ProfileEdit
+                android:id="@+id/isleft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <com.leaveschool.main.ProfileEdit
+                android:id="@+id/aim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <com.leaveschool.main.ProfileEdit
+                android:id="@+id/reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <com.leaveschool.main.ProfileEdit
+                android:id="@+id/phonenumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <com.leaveschool.main.ProfileEdit
+                android:id="@+id/emergencycontact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <com.leaveschool.main.ProfileEdit
+                android:id="@+id/emergencynumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <com.leaveschool.main.ProfileEdit
+                android:id="@+id/homecontact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <com.leaveschool.main.ProfileEdit
+                android:id="@+id/homenumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <com.leaveschool.main.ProfileEdit
+                android:id="@+id/isinlib"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <com.leaveschool.main.ProfileEdit
+                android:id="@+id/leaveTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <com.leaveschool.main.ProfileEdit
+                android:id="@+id/returnTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <CheckBox
+                android:id="@+id/isSaveMyInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:gravity="center"
+                android:text="记住我的信息以便下次使用" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/btn_bkg_red_rect_round"
+                android:text="提交"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimaryDark" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <!--leavetime-->
+    <!--returntime-->
+
+</LinearLayout>
